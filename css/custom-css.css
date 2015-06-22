@@ -7,8 +7,8 @@ body {
 
 hr {
     max-width: 50px;
-    border: #FF0000;
-    border-width: 5px;
+    border-color: #FF0000;
+    border-width: 3px;
 }
 
 hr.lihgt {
@@ -147,10 +147,10 @@ header .header-content .header-content-inner p {
 
 .images-box .images-box-caption .images-box-caption-content {
     position: absolute;
-    top: 50%;
+    top: 70%;
     width: 100%;
     text-align: center;
-    transform: translateY(-50%);
+    transform: translateY(50%);
 }
 
 .images-box .images-box-caption .images-box-caption-content .image-category {
