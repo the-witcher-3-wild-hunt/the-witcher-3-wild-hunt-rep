@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html>
+<html class="settingsHtmlBody">
     <head>
         <title>Wiedźmin 3 Dziki Gon</title>
 
@@ -21,14 +21,27 @@
         <!-- Fonts others -->
         <link href='http://fonts.googleapis.com/css?family=Open+Sans:300italic,400italic,600italic,700italic,800italic,400,300,600,700,800' rel='stylesheet' type='text/css'>
         <link href='http://fonts.googleapis.com/css?family=Merriweather:400,300,300italic,400italic,700,700italic,900,900italic' rel='stylesheet' type='text/css'>
-
+        
+        <!-- JQuery -->
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.2/jquery.min.js"></script>
+        
+        <script src="js/zwijanie_rozwijanie.js"></script>
+        
+        <script>
+            $(function () {
+                $('body').zwijanie_rozwijanie();
+            });
+        </script>
+        
     </head>
-    <body id="pageTop">
+    <body id="pageTop" class="settingsHtmlBody">
 
         <audio controls preload="none"> 
             <source src="songs/The Witcher 3- Wild Hunt OST - Hunt or Be Hunted.mp3"
                     type="audio/mp3">
         </audio>
+        
+        <iframe class="right-bottom" width="300" height="35" src="https://www.youtube.com/embed/oLSdl-CdOBo" frameborder="0" allowfullscreen></iframe>
 
         <nav id="mainNav" class="navbar navbar-inverse navbar-fixed-top">
             <div class="container-fluid">
@@ -38,7 +51,7 @@
                         <span class="icon-bar"></span>
                         <span class="icon-bar"></span>
                         <span class="icon-bar"></span>
-                    </button>               
+                    </button>
                     <a class="navbar-brand page-scroll" href="#pageTop">
                         Wiedźmin 3 Dziki Gon
                     </a>
@@ -83,6 +96,7 @@
                     <div class="col-lg-8 col-lg-offset-2 text-center">
                         <h2>The Witcher 3 Wild Hunt | Wiedźmin 3 Dziki Gon</h2>
                         <h3>Ogólny opis</h3>
+                        <a href="#" class="zwin-rozwin">+</a>
                         <hr/>
                         <p class="p-Normal">
                             Wiedźmin 3: Dziki Gon (ang. The Witcher 3: Wild Hunt) – 
@@ -107,7 +121,8 @@
                     <div class="col-lg-8 col-lg-offset-2 text-center">
                         <h2>Wiedźmin 3 Dziki Gon</h2>
                         <h3>Fabuła</h3>
-                        <hr>
+                        <a href="#" class="zwin-rozwin">+</a>
+                        <hr/>
                         <p class="p-Normal">
                             Akcja Wiedźmina 3 rozgrywa się w fikcyjnym świecie 
                             fantasy stworzonym przez pisarza Andrzeja Sapkowskiego 
@@ -127,7 +142,7 @@
             <div class="container-fluid">
                 <div class="row no-gutter">
                     <div class="col-lg-4 col-sm-6">
-                        <a href="#pageTop" class="images-box">
+                        <a href="#pageTop" class="images-box" id="galeria">
                             <img src="images/lista_zdjec/the-witche-3-1.jpg" class="img-responsive" alt="">
                             <div class="images-box-caption" >
                                 <div class="images-box-caption-content">
@@ -142,7 +157,7 @@
                         </a>
                     </div>
                     <div class="col-lg-4 col-sm-6">
-                        <a href="#pageTop" class="images-box">
+                        <a href="#pageTop" class="images-box" id="galeria">
                             <img src="images/lista_zdjec/the-witche-3-2.jpg" class="img-responsive" alt="">
                             <div class="images-box-caption">
                                 <div class="images-box-caption-content">
@@ -157,7 +172,7 @@
                         </a>
                     </div>
                     <div class="col-lg-4 col-sm-6">
-                        <a href="#pageTop" class="images-box">
+                        <a href="#pageTop" class="images-box" id="galeria">
                             <img src="images/lista_zdjec/the-witche-3-3.jpg" class="img-responsive" alt="">
                             <div class="images-box-caption">
                                 <div class="images-box-caption-content">
@@ -172,7 +187,7 @@
                         </a>
                     </div>
                     <div class="col-lg-4 col-sm-6">
-                        <a href="#pageTop" class="images-box">
+                        <a href="#pageTop" class="images-box" id="galeria">
                             <img src="images/lista_zdjec/the-witche-3-4.png" class="img-responsive" alt="">
                             <div class="images-box-caption">
                                 <div class="images-box-caption-content">
@@ -187,7 +202,7 @@
                         </a>
                     </div>
                     <div class="col-lg-4 col-sm-6">
-                        <a href="#pageTop" class="images-box">
+                        <a href="#pageTop" class="images-box" id="galeria">
                             <img src="images/lista_zdjec/the-witche-3-5.jpg" class="img-responsive" alt="">
                             <div class="images-box-caption">
                                 <div class="images-box-caption-content">
@@ -202,7 +217,7 @@
                         </a>
                     </div>
                     <div class="col-lg-4 col-sm-6">
-                        <a href="#pageTop" class="images-box">
+                        <a href="#pageTop" class="images-box" id="galeria">
                             <img src="images/lista_zdjec/the-witche-3-6.jpg" class="img-responsive" alt="">
                             <div class="images-box-caption">
                                 <div class="images-box-caption-content">
@@ -220,13 +235,29 @@
             </div>
         </section>
 
+        <section class="bg-primary">
+            <div class="container">
+                <div class="row">
+                    <div class="col-lg-8 col-lg-offset-2 text-center">
+                        <h2>Przejdź do galerii</h2>
+                        <hr/>
+                        <a class="btn btn-social-icon btn-file-image-o"
+                           href="#galeria.html" id="galeria">
+                            <i class="fa fa-file-image-o fa-3x"></i>
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </section>
+        
         <section id="Play">
             <div class="container">
                 <div class="row">
                     <div class="col-lg-8 col-lg-offset-2 text-center">
                         <h2>Wiedźmin 3 Dziki Gon</h2>
                         <h3>Rozgrywka</h3>
-                        <hr>
+                        <a href="#" class="zwin-rozwin">+</a>
+                        <hr/>
                         <div>
                             <p class="p-Normal">
                                 Gracz steruje postacią Geralta z Rivii z perpektywy 
@@ -287,7 +318,7 @@
                     <div class="col-lg-8 col-lg-offset-2 text-center">
                         <h2>Wiedźmin 3 Dziki Gon</h2>
                         <h3>Trailer</h3>
-                        <hr>
+                        <hr/>
                         <iframe src="https://www.youtube.com/embed/VF7kqc7th0A" frameborder="0" allowfullscreen></iframe>
                     </div>
                 </div>
@@ -300,12 +331,20 @@
                     <div class="col-lg-8 col-lg-offset-2 text-center">
                         <h2>Wiedźmin 3 Dziki Gon</h2>
                         <h3>Społeczność</h3>
+                        <a href="#" class="zwin-rozwin">+</a>
                         <hr/>
                         <a class="btn btn-social-icon btn-facebook"
                            href="https://www.facebook.com/PLthewitcher?brand_redir=9659019330">
                             <i class="fa fa-facebook fa-3x"></i>
                             <p>
-                                Wiedźmin 3
+                                Wiedźmin 3 - Facebook
+                            </p>
+                        </a>
+                        <a class="btn btn-social-icon btn-twitter"
+                           href="https://twitter.com/witchergame">
+                            <i class="fa fa-twitter fa-3x"></i>
+                            <p>
+                                Wiedźmin 3 - Twitter
                             </p>
                         </a>
                     </div>
@@ -313,8 +352,6 @@
             </div>
         </section>
 
-        <!-- JQuery -->
-        <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.2/jquery.min.js"></script>
         <!-- Bootstrap Core JavaScript -->
         <script src="bootstrap/dist/js/bootstrap.min.js"></script>
 
