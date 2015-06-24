@@ -11,8 +11,20 @@
                     $(this).text('+').parent().parent().find('p').slideUp();
                 } else {
                     if($(this).attr('id') === 'przelaczanie') {
-                        var link = $(this).attr('href');
-                        window.location.href = link;
+                        var link = 'http://the-witcher-3-wild-hunt.github.io/the-witcher-3-wild-hunt-rep/'
+                        link += $(this).attr('href');
+                        window.location.link = link;
+                    }
+                    switch ($(this).attr('id')) {
+                        case 'przelaczanie':
+                            var link = 'http://the-witcher-3-wild-hunt.github.io/the-witcher-3-wild-hunt-rep/'
+                            link += $(this).attr('href');
+                            window.location.href = link;
+                            break;
+                        case 'przelaczHref':
+                            var link = $(this).attr('href');
+                            window.location.href = link;
+                            break;
                     }
                     /*switch ($(this).attr('id')) {
                         case 'galeria': window.location.href = 'http://the-witcher-3-wild-hunt.github.io/the-witcher-3-wild-hunt-rep/galeria.html'; break;
